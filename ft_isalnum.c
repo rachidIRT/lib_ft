@@ -6,7 +6,7 @@
 /*   By: roubelka <roubelka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:37:11 by roubelka          #+#    #+#             */
-/*   Updated: 2024/11/03 19:30:24 by roubelka         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:45:02 by roubelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*#include <stdio.h>
-int main()
-{
-	printf("%d\n", ft_isalnum('4'));
-	printf("%d\n", ft_isalnum('}'));
-	printf("%d\n", ft_isalnum('/'));
-}*/

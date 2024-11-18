@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roubelka <roubelka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 15:55:50 by roubelka          #+#    #+#             */
-/*   Updated: 2024/11/15 17:49:13 by roubelka         ###   ########.fr       */
+/*   Created: 2024/11/05 18:12:27 by roubelka          #+#    #+#             */
+/*   Updated: 2024/11/17 19:55:34 by roubelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	unsigned char	*str1;
-	unsigned char	*str2;
+	size_t	i;
+	char	*str;
 
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
 	i = 0;
-	while (i < n)
+	while (i < len)
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		str[i] = s[start];
 		i++;
+		start++;
 	}
-	return (0);
+	str[i] = '\0';
+	return (str);
 }

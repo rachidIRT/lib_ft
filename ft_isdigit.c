@@ -6,7 +6,7 @@
 /*   By: roubelka <roubelka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 11:51:53 by roubelka          #+#    #+#             */
-/*   Updated: 2024/11/03 19:30:42 by roubelka         ###   ########.fr       */
+/*   Updated: 2024/11/15 19:04:12 by roubelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*#include <stdio.h>
-int main()
-{
-	printf("%d\n", ft_isdigit('5'));
-	printf("%d\n", ft_isdigit('4'));
-	printf("%d\n", ft_isdigit('d'));
-}*/
