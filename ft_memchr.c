@@ -6,12 +6,11 @@
 /*   By: roubelka <roubelka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:46:26 by roubelka          #+#    #+#             */
-/*   Updated: 2024/11/15 19:02:47 by roubelka         ###   ########.fr       */
+/*   Updated: 2024/11/18 13:16:44 by roubelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
